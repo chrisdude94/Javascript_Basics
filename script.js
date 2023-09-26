@@ -124,11 +124,11 @@ can handle all cases correctly
 let username = ""; 
 let userAge = 25;   
 let userIsBlocked = false;  
-let userIsLoggedIn = false;
+let userIsLoggedIn = true;
 let goToPage = "";
 
 if (username !== "" && userAge >= 18 && !userIsBlocked) {
-  userIsLoggedIn = true;
+  userIsLoggedIn = false;
   goToPage = "/home";
   console.log("Welcome! User is logged in.");
 } else {
@@ -161,3 +161,23 @@ Use arrow function syntax.
 
 Console log the function call with a few different datatypes to show that it's working
 */
+
+const coolMaker = (param) => {
+    if (typeof param === 'string') {
+      return `😎${param}😎`;
+    } else if (typeof param === 'number') {
+      const doubledNumber = param * 2;
+      return `😎${doubledNumber.toString()}😎`;
+    } else if (typeof param === 'boolean') {
+      return param ? '😎Yeah😎' : '😎Chill😎';
+    } else {
+      return '😎Primitive values only😎';
+    }
+  };
+  
+ 
+console.log(coolMaker('Hello'));     
+console.log(coolMaker(42));          
+console.log(coolMaker(true));        
+console.log(coolMaker(false));       
+console.log(coolMaker({}));   
