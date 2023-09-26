@@ -177,7 +177,7 @@ const coolMaker = (param) => {
   
  
 console.log(coolMaker('Hello'));     
-console.log(coolMaker(42));          
+console.log(coolMaker(20));          
 console.log(coolMaker(true));        
 console.log(coolMaker(false));       
 console.log(coolMaker({}));   
