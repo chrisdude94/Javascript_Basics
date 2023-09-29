@@ -100,7 +100,7 @@ const smallest = Math.min(num1, num2);
 return largest / smallest;
 };
   
-console.log(calculate(13, 24));  
+console.log(calculate(15, 30));  
 console.log(calculate(5, 10)); 
 
 
@@ -121,7 +121,7 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly
 */
 
-let username = ""; 
+let username = "benus"; 
 let userAge = 25;   
 let userIsBlocked = false;  
 let userIsLoggedIn = true;
